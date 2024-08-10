@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RockPaperScissorsApp</class>
+ <widget class="QWidget" name="RockPaperScissorsApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rock-Paper-Scissors Game</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="rockButton">
+       <property name="text">
+        <string>Rock</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="paperButton">
+       <property name="text">
+        <string>Paper</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="scissorsButton">
+       <property name="text">
+        <string>Scissors</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="resultLabel">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="scoreLabel">
+     <property name="text">
+      <string>Wins: 0 | Losses: 0 | Attempts: 0</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="feedbackLayout">
+     <item>
+      <widget class="QPushButton" name="feedbackButton">
+       <property name="text">
+        <string>Give Feedback</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="feedbackFormLayout">
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="feedbackInput">
+         <property name="placeholderText">
+          <string>Enter your feedback here...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="submitButton">
+         <property name="text">
+          <string>Submit Feedback</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

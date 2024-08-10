@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToDoListApp</class>
+ <widget class="QWidget" name="ToDoListApp">
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>To-Do List Application</string>
+  </property>
+  <layout class="QVBoxLayout" name="layout">
+   <item>
+    <layout class="QHBoxLayout" name="input_layout">
+     <item>
+      <widget class="QLineEdit" name="task_input">
+       <property name="placeholderText">
+        <string>Enter a new task</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="deadline_input">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+       <property name="dateTime">
+        <datetime>2024-08-10T00:00:00</datetime>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="add_task_button">
+       <property name="text">
+        <string>Add Task</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="task_table">
+     <property name="columnCount">
+      <number>3</number>
+     </property>
+     <property name="horizontalHeaderLabels">
+      <stringlist>
+       <string>Task</string>
+       <string>Deadline</string>
+       <string>Completed</string>
+      </stringlist>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="update_task_button">
+     <property name="text">
+      <string>Update Task</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="delete_task_button">
+     <property name="text">
+      <string>Delete Task</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <connections/>
+</ui>
